@@ -1,17 +1,7 @@
 body {
-    background-color: #F0F0F0;
+    background-color: #F4F4F4;
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-}
-
-.content {
-    background-color: white;
-    width: 80%;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -22,10 +12,67 @@ p {
     color: #666;
 }
 
-@media (max-width: 600px) {
-    .content {
-        width: 95%; /* Wider content area on smaller screens */
-        margin: 10px auto;
-        padding: 10px;
-    }
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
+
+header {
+    margin-top: 0px; /* Add space above the header */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #222;
+}
+
+.nav-bubbles {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-bubbles li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+
+.nav-bubbles li a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: inline-block; /* Ensures the width and height are respected */
+    width: 100px; /* Fixed width for each bubble */
+    height: 40px; /* Fixed height for each bubble */
+    line-height: 20px; /* Centers the text vertically */
+    text-align: center; /* Centers the text horizontally */
+    box-sizing: border-box; /* Includes padding in the width and height */
+    color: #333;
+}
+
+.main-content {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+     .nav-bubbles li {
+        display: block;
+        margin-bottom: 10px;
+    } 
+} */
