@@ -103,7 +103,8 @@ nav ul {
 .middle-section iframe {
     margin-bottom: 20px; /* Adds space between the iframe and the text */
     width: 100%;
-    max-width: 1024;
+    max-width: 1024px;
+    max-height: 576px;
     aspect-ratio: 16 / 9; /* Sets the aspect ratio of the iframe */
 }
 
