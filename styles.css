@@ -1,0 +1,151 @@
+/* START GENERAL STYLES */
+
+body {
+    font-family: "Computer Modern Sans", sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* END GENERAL STYLES */
+
+/* START NAVIGATION BAR */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center align the items */
+    position: fixed; /* Makes the navigation bar stick to the top */
+    top: 0;
+    width: 100%; /* Makes the navigation expand to cover the whole width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    width: 120px; /* Sets a fixed width for each item */
+  }
+  
+  nav ul li a, nav ul li.logo {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px; /* Increases padding to make the text larger */
+    text-decoration: none;
+    font-size: 20px; /* Makes the text larger */
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  nav ul li.logo {
+    flex-grow: 1;
+    text-align: left;
+    max-width: 240px; /* Limits the maximum width of the logo */
+    min-width: 120px; /* Ensures the logo has a minimum width */
+  }
+
+/* END NAVIGATION BAR */
+
+/* START ABOUT ME SECTION */
+
+/* Base styles for the split section */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.split-section .left, .split-section .right {
+    flex: 1 1 400px; /* Each takes up equal space, but not less than 300px */
+    margin: 10px; /* Spacing between the sections */
+    padding: 10px; /* Inner spacing */
+    max-width: 500px;
+    text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    .split-section {
+        flex-direction: column;
+    }
+} */
+
+
+/* END ABOUT ME SECTION */
+
+/* START PROJECT SECTION */
+
+.middle-section {
+    text-align: center;
+    height: 500px;
+    background-color: #F0F0F0; /* Slightly different background color */;
+}
+.middle-section h2 {
+    font-size: 24px; /* Larger text for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Adds space between the heading and icons */
+}
+
+/* END PROJECT SECTION */
+
+/* START OTHER PLATFORMS SECTION */
+
+.platforms-section {
+    text-align: center; /* Centers the content */
+    padding: 20px; /* Adds some padding around the section */
+}
+
+.platforms-section h2 {
+    font-size: 24px; /* Larger text for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Adds space between the heading and icons */
+}
+
+.platforms-section div a {
+    text-decoration: none;
+}
+
+.icons a {
+    margin: 0 15px; /* Adds space between the icons */
+    color: #000; /* Sets the icon color to black, adjust as needed */
+}
+
+.icons img {
+    width: 80px; /* Adjust the width of the icons as needed */
+    height: 80px; /* Adjust the height of the icons as needed */
+}
+
+
+/* END OTHER PLATFORMS SECTION */
+
+/* START FOOTER SECTION */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    height: 80px; /* Matching the navigation bar height */
+    background-color: #333; /* Slightly different background color or as per your design */
+    color: white;
+    width: 100%; /* Ensure it covers the whole width */
+    bottom: 0; /* Aligns to the bottom of the viewport */
+    left: 0;
+    margin-top: auto; /* Helps push the footer to the bottom if not using fixed positioning */
+}
+
+.footer p {
+    margin: 0; /* Removes default margin to help centering */
+    font-size: 20px; /* Adjust font size as desired */
+}
+
+/* END FOOTER SECTION */
