@@ -86,15 +86,16 @@ nav ul {
 
 .middle-section {
     text-align: center;
-    height: 500px;
+    height: 680px;
     background-color: #F0F0F0; /* Slightly different background color */;
 
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
 }
 .middle-section h2 {
+    padding-top: 20px;
     font-size: 24px; /* Larger text for the heading */
     color: #333; /* Dark text color */
     margin-bottom: 20px; /* Adds space between the heading and icons */
