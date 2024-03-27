@@ -58,7 +58,6 @@ nav ul {
 
 /* START ABOUT ME SECTION */
 
-/* Base styles for the split section */
 .split-section {
     display: flex;
     flex-wrap: wrap;
@@ -68,19 +67,18 @@ nav ul {
 }
 
 .split-section .left, .split-section .right {
-    flex: 1 1 400px; /* Each takes up equal space, but not less than 300px */
+    flex: 1 1 400px; /* Each takes up equal space, but not less than 400px */
     margin: 10px; /* Spacing between the sections */
     padding: 10px; /* Inner spacing */
     max-width: 500px;
     text-align: center;
 }
 
-/* @media (max-width: 768px) {
-    .split-section {
-        flex-direction: column;
-    }
-} */
-
+.split-section h2 {
+    font-size: 24px; /* Larger text for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Adds space between the heading and icons */
+}
 
 /* END ABOUT ME SECTION */
 
@@ -90,6 +88,11 @@ nav ul {
     text-align: center;
     height: 500px;
     background-color: #F0F0F0; /* Slightly different background color */;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .middle-section h2 {
     font-size: 24px; /* Larger text for the heading */
