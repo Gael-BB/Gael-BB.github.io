@@ -86,7 +86,6 @@ nav ul {
 
 .middle-section {
     text-align: center;
-    height: 680px;
     background-color: #F0F0F0; /* Slightly different background color */;
 
     /* display: flex;
@@ -99,6 +98,13 @@ nav ul {
     font-size: 24px; /* Larger text for the heading */
     color: #333; /* Dark text color */
     margin-bottom: 20px; /* Adds space between the heading and icons */
+}
+
+.middle-section iframe {
+    margin-bottom: 20px; /* Adds space between the iframe and the text */
+    width: 100%;
+    max-width: 1024;
+    aspect-ratio: 16 / 9; /* Sets the aspect ratio of the iframe */
 }
 
 /* END PROJECT SECTION */
