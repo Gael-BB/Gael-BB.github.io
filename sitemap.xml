@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Page -->
+    <url>
+        <loc>https://gaelberlan.ga</loc>
+        <lastmod>2024-03-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <!-- PDF CV -->
+    <url>
+        <loc>https://gaelberlan.ga/GaelBerlangaBoemareCV.pdf</loc>
+        <lastmod>2024-03-29</lastmod> <!-- Change this to the last update date of your CV -->
+        <changefreq>monthly</changefreq> <!-- Adjust this based on how often you update your CV -->
+        <priority>0.8</priority>
+    </url>
+</urlset>
