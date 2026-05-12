@@ -31,6 +31,7 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#startup">Startup</a>
+        <a href="#awards">Awards</a>
         <a href="#projects">Projects</a>
         <a href="/GaelBerlangaBoemareCV.pdf" target="_blank">CV</a>
       </div>
@@ -78,10 +79,6 @@
               <span class="detail-label">Languages</span>
               <span class="detail-value">French, Spanish, English</span>
               <span class="detail-sub">All native proficiency</span>
-            </div>
-            <div class="detail-card">
-              <span class="detail-label">Interests</span>
-              <span class="detail-value">Weightlifting, Rugby, Programming</span>
             </div>
           </div>
         </div>
@@ -161,6 +158,54 @@
       </div>
     </section>
 
+    <!-- Honors & Awards -->
+    <section id="awards" class="section">
+      <div class="container">
+        <h2 class="section-title">Honors &amp; Awards</h2>
+        <div class="awards-grid">
+
+          <div class="award-card">
+            <div class="award-tag">3rd Place</div>
+            <h3>Belgian Physics Olympiad 2021</h3>
+            <p class="award-meta">Olympiades BE &middot; May 2021</p>
+            <div class="award-links">
+              <a href="https://www.britishschool.be/bsb-students-are-national-physics-champions/" target="_blank" rel="noopener">Article &rarr;</a>
+            </div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-tag">Winner</div>
+            <h3>European Statistics Competition 2020</h3>
+            <p class="award-meta">Eurostat &middot; Oct 2020</p>
+            <div class="award-links">
+              <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/-/CN-20200907-1" target="_blank" rel="noopener">Eurostat &rarr;</a>
+              <a href="https://esc-2020.eu/" target="_blank" rel="noopener">ESC 2020 &rarr;</a>
+              <a href="https://statbel.fgov.be/en/news/belgian-winner-european-statistics-competition" target="_blank" rel="noopener">Statbel &rarr;</a>
+            </div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-tag">2nd Place</div>
+            <h3>Belgian Informatics Olympiad 2020</h3>
+            <p class="award-meta">Olympiade belge d'Informatique (beOI) &middot; Apr 2020</p>
+            <div class="award-links">
+              <a href="https://www.be-oi.be/fr/beoi20/" target="_blank" rel="noopener">View &rarr;</a>
+            </div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-tag">3rd Place</div>
+            <h3>Belgian Informatics Olympiad 2018</h3>
+            <p class="award-meta">Olympiade belge d'Informatique (beOI) &middot; Apr 2018</p>
+            <div class="award-links">
+              <a href="https://www.be-oi.be/fr/beoi18/" target="_blank" rel="noopener">View &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Projects -->
     <section id="projects" class="section section-alt">
       <div class="container">
@@ -195,22 +240,6 @@
             <a href="https://github.com/apple-phi/idp" target="_blank" rel="noopener" class="project-link">View on GitHub &rarr;</a>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <span class="skill">Python</span>
-          <span class="skill">R</span>
-          <span class="skill">C++</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">HTML &amp; CSS</span>
-          <span class="skill">SolidWorks</span>
-          <span class="skill">AutoCAD</span>
         </div>
       </div>
     </section>
@@ -275,7 +304,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item, .project-card, .startup-card, .about-text, .about-details, .skills-grid').forEach(el => {
+    document.querySelectorAll('.timeline-item, .project-card, .award-card, .startup-card, .about-text, .about-details, .skills-grid').forEach(el => {
       observer.observe(el);
     });
   </script>
