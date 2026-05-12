@@ -30,6 +30,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#startup">Startup</a>
         <a href="#projects">Projects</a>
         <a href="/GaelBerlangaBoemareCV.pdf" target="_blank">CV</a>
       </div>
@@ -146,11 +147,32 @@
       </div>
     </section>
 
+    <!-- Current Startup -->
+    <section id="startup" class="section">
+      <div class="container">
+        <h2 class="section-title">Current Startup</h2>
+        <a href="https://camguru.co.uk" target="_blank" rel="noopener" class="startup-card">
+          <div class="startup-tag">Building Now</div>
+          <h3 class="startup-name">CamGuru</h3>
+          <p class="startup-url">camguru.co.uk</p>
+          <p class="startup-desc">An education platform connecting Cambridge students with learners worldwide for high-quality tutoring and academic mentorship.</p>
+          <span class="startup-link">Visit site &rarr;</span>
+        </a>
+      </div>
+    </section>
+
     <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-tag">Hackathon &mdash; 1st Place</div>
+            <h3>Algotrade Hackathon &mdash; Negative Eevee</h3>
+            <p>Won 1st place and &euro;5,000 prize money. Built an algorithmic trading strategy that outperformed all other teams.</p>
+            <a href="https://github.com/alexbolfa/algotrade-negative-eevee" target="_blank" rel="noopener" class="project-link">View on GitHub &rarr;</a>
+          </div>
 
           <div class="project-card">
             <div class="project-tag">Game Theory</div>
@@ -176,7 +198,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="section section-alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
@@ -251,7 +273,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item, .project-card, .about-text, .about-details, .skills-grid').forEach(el => {
+    document.querySelectorAll('.timeline-item, .project-card, .startup-card, .about-text, .about-details, .skills-grid').forEach(el => {
       observer.observe(el);
     });
   </script>

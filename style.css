@@ -335,6 +335,87 @@ nav.scrolled {
   margin-bottom: 4px;
 }
 
+/* ── Startup ── */
+.startup-card {
+  display: block;
+  position: relative;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 40px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s, box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
+}
+
+.startup-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.startup-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.startup-card:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.25);
+}
+
+.startup-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.startup-name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.startup-url {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.startup-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 640px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.startup-link {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
 /* ── Projects ── */
 .projects-grid {
   display: grid;
