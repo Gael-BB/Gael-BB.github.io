@@ -205,20 +205,6 @@
           </div>
 
           <div class="project-card">
-            <div class="project-tag">Game Theory</div>
-            <h3>Poker Bot</h3>
-            <p>A bot for Kuhn and Texas Hold'em poker variants, trained with Counterfactual Regret Minimization and game abstraction.</p>
-            <button onclick="openPokerBot()" class="project-link">Try it &rarr;</button>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">Trading</div>
-            <h3>IMC Prosperity 2</h3>
-            <p>Placed top 1% out of 10,000 teams. Built trading algorithms using Black-Scholes, moving averages, and game theory.</p>
-            <a href="https://github.com/Gael-BB/Prosperity2" target="_blank" rel="noopener" class="project-link">View on GitHub &rarr;</a>
-          </div>
-
-          <div class="project-card">
             <div class="project-tag">Robotics</div>
             <h3>Cambridge Robotics Competition</h3>
             <p>Built a delivery robot from raw materials. Programmed an Arduino with sensors, control systems, and path-finding algorithms.</p>
@@ -250,37 +236,7 @@
     </div>
   </footer>
 
-  <!-- Poker Bot Modal -->
-  <div id="poker-modal" class="modal-overlay" onclick="closePokerBot(event)">
-    <div class="modal">
-      <button class="modal-close" onclick="closePokerBot()" aria-label="Close">&times;</button>
-      <iframe id="poker-iframe" src="" allowfullscreen></iframe>
-    </div>
-  </div>
-
   <script>
-    // Poker bot modal
-    function openPokerBot() {
-      const modal = document.getElementById('poker-modal');
-      const iframe = document.getElementById('poker-iframe');
-      iframe.src = 'https://poker-bot-two.vercel.app/';
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closePokerBot(e) {
-      if (e && e.target !== e.currentTarget) return;
-      const modal = document.getElementById('poker-modal');
-      const iframe = document.getElementById('poker-iframe');
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-      iframe.src = '';
-    }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closePokerBot();
-    });
-
     // Sticky nav shadow on scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
